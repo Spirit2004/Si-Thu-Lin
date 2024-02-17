@@ -1,0 +1,48 @@
+.attribution 
+{ 
+    font-size: 11px;
+    text-align: center; 
+}
+    
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+body
+{
+    background-color: whitesmoke;
+}
+
+#main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+#secondary
+{
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    border-radius: 30px;
+
+}
+
+img
+{
+    margin: auto;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.page
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
