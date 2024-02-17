@@ -1,0 +1,72 @@
+body
+{
+    font-size: 14px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+
+.first
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second
+{
+    display:grid;
+    place-items:center;
+    margin: 30%;
+    padding: 5%;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 15px;
+}
+
+.main_pic
+{ 
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.name
+{
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.city
+{
+    color : hsl(75, 94%, 57%);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.whoiam
+{
+    margin-bottom: 10px;
+}
+
+button
+{
+    width:250px;
+    height:50px;
+    cursor:pointer;
+    background-color:hsl(0, 0%, 20%);
+    color:white;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+button:hover 
+{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
