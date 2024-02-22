@@ -1,0 +1,153 @@
+body
+{
+    background-color: hsl(233, 47%, 7%);
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+main
+{
+    display:grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(244, 38%, 16%);
+    margin:100px 100px;
+    border-radius: 10px;
+    width:1000px;
+}
+.mobile-section
+{ 
+    display:none;
+}
+
+.desktop-section
+{
+    width:1000px;
+    height: 400px;
+    background: url(images/image-header-desktop.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.overlay-desktop
+{
+    background-color:hsl(277, 64%, 61%);
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    bottom:0;
+    right: 0;
+    left:0;
+    opacity: 0.5;
+}
+
+.paragraph
+{
+    margin: 50px;
+}
+h1
+{ 
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+p
+{
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0; 
+    color:hsla(0, 0%, 100%, 0.75);
+}
+.sub
+{
+    color:hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0; 
+}
+.sub-header
+{
+    display:flex;
+    column-gap: 20px;
+}
+h2
+{
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+@media only screen and (max-width: 600px)
+{
+    main
+    {
+        display:block;
+    }
+    .container
+    {
+        display:inline;
+        min-height: 100vh;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .desktop-section
+    {
+        display:none;
+    }
+    .overlay-desktop
+    {
+        display: none;
+    }
+    .mobile-section
+    {
+        width: px;
+        height: 300px;
+        background: url(images/image-header-mobile.jpg);
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .overlay-mobile
+    {
+        background-color:hsl(277, 64%, 61%);
+        position: absolute;
+        width:100%;
+        height: 100%;
+        top:0;
+        bottom:0;
+        right: 0;
+        left:0;
+        opacity: 0.5;
+    }
+    h1, p
+    {
+        text-align: center;
+    }
+    .sub-header
+    {
+        display: grid; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
