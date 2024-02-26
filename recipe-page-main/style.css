@@ -1,0 +1,124 @@
+body
+{
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main
+{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    width: 700px;
+    border-radius: 20px;
+}
+img
+{
+    width:700px;
+    border-radius: 20px;
+}
+h1
+{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h2,.ingre,ol
+{
+    color:hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.instructions-list
+{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+p,.p-span,.amount,.steps,.category
+{
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.preparation-time
+{
+    background-color: hsl(330, 100%, 98%);
+    padding:5px;
+    border-radius: 20px;
+}
+
+h3
+{
+    color:hsl(322, 80%, 24%);
+    font-weight: 700;
+}
+.p-time
+{
+    color:hsl(322, 80%, 24%);
+}
+.u-list
+{
+    color:hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.s-head
+{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color:hsl(24, 5%, 18%);
+}
+.instructions,.amount,.u-list
+{
+    margin-left: 20px;
+}
+.mini-con
+{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    padding-left: 20px;
+}
+
+.value
+{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: hsl(14, 45%, 36%);
+}
+
+@media only screen and (max-width: 600px)
+{
+    .container
+    {
+        width: 100%;
+        height:100%;
+        border-radius: 0px;
+    }
+    img 
+    {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        border-radius: 0%;
+    }
+}
