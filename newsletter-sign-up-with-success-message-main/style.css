@@ -1,0 +1,215 @@
+/* main index start */
+body
+{
+    background-color:  hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main-container
+{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 700px;
+}
+.paragraph-container
+{
+    width: 100%;
+    display: inline;
+    align-items: center;
+}
+.paragraph-container h1
+{
+    font-weight: 700;
+    color: hsl(235, 18%, 26%);
+    font-size: 50px;
+}
+.paragraph-container p,.paragraph-container label
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(231, 7%, 60%);
+}
+
+.paragraph-container form
+{
+    margin-top: 20px;
+}
+.paragraph-container .list
+{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+.paragraph-container .list img
+{
+    transform: scale(0.7);
+}
+.paragraph-container header
+{
+    color: hsl(235, 18%, 26%);
+    font-size: 11px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.paragraph-container input[type='email']
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+.paragraph-container button
+{
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+.paragraph-container button:hover
+{
+    background-color:  hsl(4, 100%, 67%);
+}
+#error-result
+{
+    color:red;
+}
+.mobile-img{ 
+    display: none;
+}
+.desktop-img
+{
+    float: right;
+    width:50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .desktop-img
+    {
+        display: none;
+    }
+    .mobile-img
+    {
+        display: flex;
+        width: 100%;
+    }
+    body, main
+    {
+        position: relative;
+        margin: 0%;
+        padding: 0%;
+    }
+    .main-container, main
+    { 
+        margin: 0%;
+        padding: 0%; 
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .paragraph-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+        margin-left: 80px;
+    }
+    .paragraph-container header, .paragraph-container input[type="email"], .paragraph-container button
+    { 
+        width: 400px;
+    }
+}
+/* main index end*/
+
+/* thankyou index start */
+.thankyou-container
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+.thankyou-container img
+{
+    transform: scale(0.8);
+}
+.thankyou-container h1{
+    font-weight: 700;
+    color: hsl(235, 18%, 26%);
+    font-size: 50px;
+    margin-top: 0%;
+}
+
+.thankyou-container p {
+    font-size: 16px;
+    font-weight: 400;
+    color:  hsl(235, 18%, 26%);
+}
+.thankyou-container p span
+{
+    font-weight: bold;
+}
+.thankyou-container button
+{
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.thankyou-container button:hover 
+{
+    background-color:  hsl(4, 100%, 67%);
+}
+
+@media only screen and (max-width: 600px) 
+{ 
+    body
+    {
+        background-color: white;
+    }
+    .thankyou-container
+    {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .thankyou-container button
+    {
+        width: 400px;
+        position: absolute;
+        bottom: 0;
+        top: 650px;
+    }
+    .thankyou-container p
+    {
+        width: 400px;
+    }
+}
+/* thankyou index end */

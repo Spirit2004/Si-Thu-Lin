@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <main>
+    <div class="main-container">  
+        <img class="desktop-img" src="assets/images/illustration-sign-up-desktop.svg">
+        <img class="mobile-img" src="assets/images/illustration-sign-up-mobile.svg"> 
+      <div class="paragraph-container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="list">
+          <img src="assets/images/icon-list.svg">
+          <label>Product discovery and building what matters</label>
+          <br>
+        </div>
+        <div class="list">
+          <img src="assets/images/icon-list.svg">
+          <label>Measuring to ensure updates are a success</label>
+          <br>
+        </div>
+        <div class="list">
+          <img src="assets/images/icon-list.svg">
+          <label>And much more!</label>
+          <br>
+        </div>
+        <form action="thankyou.html" method="post">
+          <header>
+            <div class="email-title">Email address</div>
+            <div id="error-result"></div>
+          </header>
+          <input type="email" id="email-input" placeholder="email@company.com">
+          <br>
+          <button id="email-button">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- Success message end -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Spirit2004/Si-Thu-Lin">Si Thu Lin</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
