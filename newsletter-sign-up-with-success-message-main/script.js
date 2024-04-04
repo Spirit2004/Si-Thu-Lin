@@ -18,7 +18,7 @@ submitButton.addEventListener('click', mainFunction);
 
 function errorFunction()
 {
-    if (emailInput.value === "" || isNaN(emailInput.value))
+    if (emailInput.value === "" || !emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
     {
         errorText.innerText = "Vaid email required."
         emailInput.style.borderColor = "red";
