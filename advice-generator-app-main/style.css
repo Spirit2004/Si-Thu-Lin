@@ -50,6 +50,7 @@ p {
     color: var(--paragraph);
     font-size: 20px;
     letter-spacing: 1px;
+    text-align: center;
 }
 .images {
     margin-top: 20px;
