@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --paragraph: hsl(193, 38%, 86%);
+    --header: hsl(150, 100%, 66%);
+    --secondary: hsl(217, 19%, 38%);
+    --main: hsl(217, 19%, 24%);
+    --body: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--body);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+main {
+    background-color: var(--main);
+    position: relative;
+    width: 500px;
+    border-radius: 5%;
+    padding: 20px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
+
+h5 {
+    color: var(--header);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+p {
+    color: var(--paragraph);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.images {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#btn_advice {
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    margin: auto auto;
+    background-image: url(images/icon-dice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--header);
+    cursor: pointer;
+}
+
+#btn_advice:hover {
+    box-shadow: 0 0 2em 0 var(--header);
+}
+.images #desktop {
+    display: flex;
+    width: 100%;
+}
+
+.images #mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .images #desktop {
+        display: none;
+    }
+
+    .images #mobile {
+        display: flex;
+        width: 100%;
+    }
+}
